@@ -1,0 +1,86 @@
+// Import de Bootstrap (via npm)
+@use "../../node_modules/bootstrap/scss/bootstrap" as *;
+
+// Couleurs personnalisées
+$header-bg: #00497c;
+$footer-bg: #00497c;
+$main-bg: #f1f8fc;
+$card-bg: #0074c7;
+$input-bg: #f1f8fc;
+$btn-bg: #0074c7;
+$btn-text-color: #f1f8fc;
+
+// Header
+header {
+  background-color: $header-bg;
+  padding: 2rem 0; // 2x plus haut que footer
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    transition: all 0.2s;
+
+    &:hover {
+      font-weight: bold;
+    }
+
+    &:active,
+    &.active {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Footer
+footer {
+  background-color: $footer-bg;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+// Main
+main {
+  background-color: $main-bg;
+  min-height: 80vh;
+  padding: 2rem;
+}
+
+// Cards
+.card {
+  background-color: $card-bg;
+  color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+// Form inputs
+input,
+textarea,
+select {
+  background-color: $input-bg;
+  border: none;
+}
+
+// Boutons
+.btn-custom {
+  background-color: $btn-bg;
+  color: $btn-text-color;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  border: none;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+

@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /Touche_Pas_Au_Klaxon/public/
+
+# Laisse passer les vrais fichiers et dossiers (css, js, images, whereami.php, etc.)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Envoie la partie après /public/ à index.php dans le paramètre r
+# /Touche_Pas_Au_Klaxon/public/         -> index.php?r=/
+# /Touche_Pas_Au_Klaxon/public/users    -> index.php?r=/users
+RewriteRule ^(.*)$ index.php?r=/$1 [QSA,L]

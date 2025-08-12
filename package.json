@@ -1,0 +1,23 @@
+{
+  "name": "touche_pas_au_klaxon",
+  "version": "1.0.0",
+  "description": "Application intranet développée en PHP suivant une architecture MVC, permettant d’organiser le covoiturage entre différentes agences d’une entreprise.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Puygauthier/Touche_Pas_Au-_Klaxon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Puygauthier/Touche_Pas_Au-_Klaxon/issues"
+  },
+  "homepage": "https://github.com/Puygauthier/Touche_Pas_Au-_Klaxon#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.7"
+  }
+}

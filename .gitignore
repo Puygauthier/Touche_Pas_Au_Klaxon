@@ -1,0 +1,33 @@
+# OS / éditeurs
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Node
+node_modules/
+
+# PHP vendor (Composer)
+vendor/
+composer.phar
+# (on garde composer.lock dans le dépôt)
+
+# Env / secrets
+.env
+.env.*
+
+# Builds / artefacts
+public/css/*.map
+public/scss/*.map
+*.log
+
+# Caches
+.cache/
+.phpunit.result.cache
+coverage/
+var/cache/
+storage/cache/
+tmp/
+npm-debug.log*
+yarn-error.log*

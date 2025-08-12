@@ -22,11 +22,9 @@ CREATE TABLE trajets (
     places_total INT NOT NULL CHECK (places_total > 0),
     places_disponibles INT NOT NULL CHECK (places_disponibles >= 0),
     auteur_id INT NOT NULL,
-
     FOREIGN KEY (agence_depart_id) REFERENCES agences(id),
     FOREIGN KEY (agence_arrivee_id) REFERENCES agences(id),
     FOREIGN KEY (auteur_id) REFERENCES utilisateurs(id),
-
     CHECK (agence_depart_id != agence_arrivee_id),
     CHECK (date_heure_arrivee > date_heure_depart),
     CHECK (places_disponibles <= places_total)

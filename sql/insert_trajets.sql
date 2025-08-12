@@ -1,0 +1,11 @@
+INSERT INTO trajets (agence_depart_id, agence_arrivee_id, date_heure_depart, date_heure_arrivee, places_total, places_disponibles, auteur_id) VALUES
+(1, 2, '2025-08-15 08:00:00', '2025-08-15 11:00:00', 4, 4, 1), -- Paris -> Lyon, auteur Martin Alexandre (id 1)
+(3, 1, '2025-08-16 09:30:00', '2025-08-16 12:30:00', 3, 2, 2), -- Marseille -> Paris, auteur Dubois Sophie (id 2)
+(4, 5, '2025-08-17 07:45:00', '2025-08-17 10:00:00', 5, 5, 3), -- Toulouse -> Nice, auteur Bernard Julien (id 3)
+(6, 7, '2025-08-18 13:00:00', '2025-08-18 16:00:00', 2, 1, 4), -- Nantes -> Strasbourg, auteur Moreau Camille (id 4)
+(8, 9, '2025-08-19 15:30:00', '2025-08-19 18:00:00', 6, 6, 5), -- Montpellier -> Bordeaux, auteur Lefèvre Lucie (id 5)
+(10, 11, '2025-08-20 10:00:00', '2025-08-20 13:00:00', 4, 3, 6), -- Lille -> Rennes, auteur Leroy Thomas (id 6)
+(12, 1, '2025-08-21 08:30:00', '2025-08-21 11:30:00', 3, 3, 7), -- Reims -> Paris, auteur Roux Chloé (id 7)
+(2, 3, '2025-08-22 09:00:00', '2025-08-22 12:00:00', 5, 4, 8), -- Lyon -> Marseille, auteur Petit Maxime (id 8)
+(5, 4, '2025-08-23 07:15:00', '2025-08-23 10:15:00', 2, 2, 9), -- Nice -> Toulouse, auteur Garnier Laura (id 9)
+(7, 6, '2025-08-24 14:00:00', '2025-08-24 17:00:00', 4, 4, 10); -- Strasbourg -> Nantes, auteur Dupuis Antoine (id 10)
